@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="20thSepToDoTask.css">
+    <script type="text/javascript" src="20thSepToDoTask.js"></script>
+    <link rel="stylesheet" href="20thSepToDoTask.css" type="text/css" media="screen" charset="utf-8">
+    <title>Bill Splitter Worksheet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <div class="header">
+        <h1 style="font-size:7vw;">Bill Splitter</h1>
+        <p style="font-size:4vw;">20th September, Bill Splitter Practise!</p>
+    </div> 
+
+</head>
+
+<body bgcolor="1e1e1e" text="white">
+
+<h1 style="text-align: center">Bill Splitter Calculator</h1>
+
+<b>
+    <p>Please FILL the bill information below:</p>
+</b>
+
+    <div id="calculator">
+        <form>
+            <b>
+                <p>How much was your bill?</p>
+            </b>  
+
+            £   <input id="billamt" type="number" placeholder="Enter Bill Amount">
+
+            <b>
+                <p>Tip Percentage</p>
+            </b>
+
+            <select id="tipPercent">
+                <option disabled selected value="0">Choose Tip %</option>
+                <option value="0.20">20%</option>
+                <option value="0.15">15%</option>
+                <option value="0.10">10%</option>
+                <option value="0.05">5%</option>
+                <option value="0.00">0%</option>
+            </select>
+        </form>
+
+    <b>
+        <p>How many people are sharing the bill?</p>
+    </b>  
+
+    <input id="peopleamt" type="text" placeholder="Enter Number Of People">
+    <br><br>
+
+    <div class="container">
+        <button type="button" id="calculate">Calculate!</button>       
+    </div>
+
+    <div id="totalTip">
+        <br>
+        <sup>£</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+    </div>
+</body>
+
+</html>
