@@ -13,11 +13,11 @@ function calculateTip(){
     //Check to see if this input is empty or less than or equal to 1
     if (numOfPeople === "" || numOfPeople <= 1) {
         numOfPeople = 1;
-        document.getElementById("each").style.display = "none";
+        //document.getElementById("each").style.display = "none";
     } 
-    else {
-        document.getElementById("each").style.display = "block";
-    }
+    //else {
+    //    document.getElementById("each").style.display = "block";
+    // }
 
     //Calculate tip
     var tip = billAmt * tipPercent;
@@ -27,8 +27,6 @@ function calculateTip(){
     document.getElementById("totalTip").style.display = "block";
     document.getElementById("tip").innerHTML = total;
   
-    //click to call function
-    document.getElementById("calculate").onclick = function() {
-    calculateTip();    
-    };
+    
 }
+

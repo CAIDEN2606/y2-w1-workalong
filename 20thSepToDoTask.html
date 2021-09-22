@@ -19,8 +19,6 @@
 
 <body bgcolor="1e1e1e" text="white">
 
-<h1 style="text-align: center">Bill Splitter Calculator</h1>
-
 <b>
     <p>Please FILL the bill information below:</p>
 </b>
@@ -58,11 +56,20 @@
         <button type="button" id="calculate">Calculate!</button>       
     </div>
 
+    <b>
+        <p>Calculated Bill (Cost Per Person):</p>
+    </b> 
+
     <div id="totalTip">
-        <br>
-        <sup>£</sup><span id="tip">0.00</span>
-        <small id="each">each</small>
+
+        <textarea id="tip" name="totalTipBox" rows="1" cols="19"></textarea>
     </div>
+    <script>
+        //click to call function
+        document.getElementById("calculate").onclick = function() {
+            calculateTip()    
+        };
+    </script>
 </body>
 
 </html>
